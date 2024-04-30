@@ -1,0 +1,58 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - change_order
+  - cancel_order
+  - place_order
+  - check_invoice
+  - check_cancellation_fee
+  - change_shipping_address
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_check_cancellation_fee:
+  - text: "To check the cancellation fee, please visit our website or contact our customer support."
+
+  utter_change_shipping_address:
+  - text: "To change your shipping address, please visit your account settings on our website."
+
+  utter_check_invoice:
+  - text: "To check your invoice, please log in to your account on our website and navigate to the invoices section."
+
+  utter_change_order:
+  - text: "To change your order, please visit your account settings on our website."
+
+  utter_cancel_order:
+  - text: "To cancel your order, please visit your account settings on our website."
+
+  utter_place_order:
+  - text: "To place an order, please visit our website and follow the instructions."
+  
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

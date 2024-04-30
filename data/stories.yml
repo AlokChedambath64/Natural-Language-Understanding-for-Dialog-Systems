@@ -1,0 +1,69 @@
+stories:
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: change order
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: change_order
+  - action: utter_change_order
+
+- story: cancel order
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: cancel_order
+  - action: utter_cancel_order
+
+- story: place order
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: place_order
+  - action: utter_place_order
+
+- story: check invoice
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: check_invoice
+  - action: utter_check_invoice
+
+- story: check cancellation fee
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: check_cancellation_fee
+  - action: utter_check_cancellation_fee
+
+- story: change shipping address
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: change_shipping_address
+  - action: utter_change_shipping_address

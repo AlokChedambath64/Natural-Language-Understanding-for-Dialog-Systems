@@ -1,0 +1,881 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+    
+- intent: change_order
+  examples: |
+    - can you help me to add something to an order?
+    - can you help me removing some items?
+    - help adding an item
+    - I try to change my last order
+    - could I add an item to an order?
+    - I have problems with removing an item
+    - I have a problem with removing several items
+    - I have to change my order
+    - I have a problem with removing something
+    - I have got to change several items of an order
+    - I don't know how I could add something
+    - I don't know how to change an item of an order
+    - assistance with removing several items from an order
+    - I want assistance to change an order I made
+    - how can I change something of an order?
+    - I need help with removing something
+    - I need help to add several items
+    - I would like to add several items to an order
+    - I don't know how I can remove several items from an order
+    - can I change the order I made?
+    - could you help me change my order?
+    - I need help with changing the order I made
+    - can you help me to remove something?
+    - how to add something?
+    - assistance changing the last order I made
+    - can you help me to remove an item?
+    - how to change an order?
+    - help to add several items to an order
+    - I want to remove an item from an order
+    - I have to remove several items
+    - I have forgotten to include an item
+    - could I add something to an order?
+    - I have to add something
+    - remove some items from an order
+    - help me remove an item from an order
+    - can you help me changing the order I made?
+    - remove item from order
+    - question about changing an order
+    - how could I remove several items from an order?
+    - I have to add several items to an order
+    - problem with adding something
+    - change an order
+    - can you help me to change an order I have made?
+    - could you help me add something to an order?
+    - could you help me change the order I have made?
+    - help to add an item
+    - is it possible to change the order I have made?
+    - help to change an order I have made
+    - help me change something of an order
+    - I don't know how to remove an item from an order
+    - question about changing my order
+    - I am trying to change my last order
+    - help to change an item of an order
+    - I need help changing my order
+    - I need to change the last order I have made
+    - I need assistance to change an order
+    
+- intent: cancel_order
+  examples: |
+    - I have problems with canceling an order
+    - how can I find information about canceling orders?
+    - I need help with canceling the last order
+    - could you help me cancelling the last order I made?
+    - problem with cancelling an order I made
+    - can you help me canceling my last order?
+    - I do not know how to cancel the last order I have made
+    - problems with canceling my orders
+    - I have problems with cancelling the last order I have made
+    - could you give me information about order cancellations?
+    - I need help canceling the last order I have made
+    - I need help with cancelling the order I made
+    - I do not want the order
+    - how could I find information about cancelling an order?
+    - would you give me information about order cancellations?
+    - I have problems with cancelling my order
+    - how to cancel an order?
+    - I have problems with cancelling an order I have made
+    - assistance with cancelling the order I made
+    - can you give me information about canceling an order?
+    - problems with canceling orders
+    - I do not know how I can cancel the last order I made
+    - I would like to cancel the order I made
+    - I need help canceling an order
+    - how could I get information about cancelling an order?
+    - I need help cancelling an order I made
+    - I have problems with cancelling orders
+    - I have a question about canceling an order
+    - problem with cancelling orders
+    - problems with cancelling an order
+    - how could I cancel an order?
+    - where could I get information about order cancellations?
+    - I can't pay for the order
+    - I need assistance cancelling an order I made
+    - I am trying to find information about order cancellations
+    - I want help cancelling an order I have made
+    - I need help with cancelling an order I have made
+    - where to cancel an order I made?
+    - is it possible to cancel my order?
+    - where can I get information about canceling orders?
+    - assistance cancelling an order I have made
+    - assistance canceling the order I have made
+    - I want to cancel the order I made
+    - I do not know how I can cancel the order I made
+    - I can't pay for the last order I have made
+    - I would like to cancel my last order
+    - where can I cancel my order?
+    - help me canceling my order
+    - question about canceling my order
+    - question about canceling an order
+    - problem with canceling the order I have made
+    - could you help me cancelling an order I made?
+    - question about canceling the last order I made
+    - I want to know more about order cancelations
+    - could you help me to cancel an order?
+    - could you help me cancel the last order I have made?
+    - where do I cancel the last order?
+    - I try to cancel the order I made
+    - help me cancelling an order I made
+    - help me canceling the order I made
+    - where can I cancel the order I have made?
+    - I don't know how to cancel an order I made
+    - I would like to cancel an order
+    - I do not know how I can cancel an order I have made
+    - I want assistance to cancel the last order I have made
+    - help with canceling an order I made
+    - I don't know how to cancel my last order
+    - I don't know how to cancel the order I made
+    - can you help me to cancel the order I made?
+    - help to cancel my order
+    - how do I cancel my order?
+    - how do I cancel the last order I made?
+    - I can't pay for my last order
+    - help me cancelling the last order I have made
+    - how can I find information about cancelling orders?
+    - I need assistance with canceling the last order I have made
+    - I have to cancel my last order
+    - cancel an order I have made
+    - I have a question about cancelling my last order
+    - problem with cancelling the last order
+    - I want assistance to cancel my order
+    - can you help me to cancel my order?
+    - cancelling order
+    - I want information about canceling orders
+    - I need help with canceling the order I have made
+    - help with canceling the order I made
+    - I need help with cancelling my order
+    - how could I find information about cancelling an order?
+    - I have got to cancel the last order I made
+    - I need assistance canceling the last order I have made
+    - question about canceling orders
+    - I do not know how I could cancel the order I have made
+    - I have problems with canceling my last order
+    - help with cancelling the order I have made
+    - I need assistance with canceling the order I have made
+    - problem with cancelling an order I have made
+    - I try to cancel the last order I have made
+    - I would like to know about order cancellations
+    - question about canceling my orders
+    - I do not know how I could cancel my last order
+    - how do I cancel the last order I have made?
+    - I would like information about canceling an order
+    - assistance cancelling my order
+    - how to cancel the last order I have made?
+    - I am trying to find information about cancelling an order
+    - can you help me to cancel the last order I have made?
+    
+
+- intent: place_order
+  examples: |
+    - could you help me buying a few of your item?
+    - I do not know how I could buy some items
+    - I don't know how to buy several of your item
+    - I have to buy several items
+    - I need help to buy several items
+    - I do not know what to do to buy several items
+    - I don't know how I could buy an item
+    - I try to buy several items
+    - could you help me buy something?
+    - would it be possible to buy several items?
+    - where do I buy a few of your item?
+    - could you help me to buy several of your item?
+    - I want to buy several of your item
+    - assistance making an order
+    - help to buy several of your item
+    - help buying some of your item
+    - I don't know how to make an order
+    - how could I buy an item?
+    - help me buy a few of your item
+    - I don't know how I could make an order
+    - I need assistance buying an item
+    - help me buy several items
+    - I need help making an order
+    - how to buy something?
+    
+    
+- intent: check_invoice
+  examples: |
+    - I do not know how I can find the invoice from January
+    - assistance taking a quick look at the invoices from May
+    - I need to check the invoices
+    - I have got to find the invoices
+    - where could I check the invoice from last month?
+    - I can't find the invoices from five purchases ago
+    - help taking a quick look at the invoice from last month
+    - I don't know how to check the invoices from six months ago
+    - where can I take a quick look at the invoices?
+    - I don't know how I can check the invoices
+    - checking invoice from last purchase
+    - I don't know what I have to do to find the invoice
+    - I don't know how to find the invoice
+    - assistance checking my invoices
+    - what do I need to do to find the invoices?
+    - I need assistance checking the invoice from four months ago
+    - how do I check the invoices from three months ago?
+    - help me finding the invoices from my last purchase
+    - checking invoice
+    - is it possible to find the invoice from November?
+    - I don't know how I can check the invoices from 2 months ago
+    - what do I need to do to find the invoices from last month?
+    - help me checking the invoices from 3 purchases ago
+    - I would like to find the invoices from last month
+    
+    
+- intent: check_cancellation_fee
+  examples: |
+    - I don't know what I need to do to check the early exit fees
+    - assistance to check the early termination penalty
+    - i cannot find the early exit penalties can uhelp me
+    - i want assistance checking the early  exit fee
+    - I need assistance to check the cancellation fee
+    - I cannot find the cancellation fee
+    - help me to check the cancellation fee
+    - want help to see the cancellation penaltyh
+    - need help seeing the withdrawal penalties
+    - i want assistance checking the early termination feees
+    - i have to see te early exit fees can i get some help
+    - help checkingf the cancellation penalty
+    - I cannot find the cancellation fees
+    - I would like to check the cancellation fees
+    - check the cancellation fees
+    - how to see the withdrawal charge
+    - assistance to check the early termination fees
+    - what do I need to do to check the cancellation fee?
+    - help checking the cancellation fees
+    - where could I check the cancellation fees?
+    - wanna check the termination fee
+    - I want assistance checking the goddamn early exit penalties
+    - I don't know how I can check the cancellation fee
+    - see the early termination fees
+    - where can I see the termination fees?
+    - I don't know what to do to check the cancellation fees
+    - I want to check the cancellation fee
+    - I can't find the cancellation fees
+    - where can I check the cancellation fee?
+    - how much will you charge me if I break the contract?
+    - I would like to check the cancellation fee
+    - check the early exit penaltie
+    - i have to check the  early termination fee can u help me
+    - can u help me see the withdrawal charges
+    - I do not know how I could check the cancellation fee
+    - i want assistance checking the withdrawal  fees
+    - how could I check the cancellation fees?
+    - what are the cancellation fees?
+    - can you show me the termination penalty?
+    - can u help me checkimg the early exit penalty
+    - where to check the goddamn withdrawal charge
+    - can u help me check the cancellation fee
+    - I try to check the cancellation fee
+    - where to check the termination penalties
+    - I want to check the early exit fee
+    - what is the cancellation fee?
+    - how could I check the cancellation fees?
+    - I want help to check the cancellation fees
+    - how do I check the cancellation fees?
+    - I do not know how I could check the cancellation fees
+    - can u help me see the early termination charges
+    - is it possible to check the cancellation fees?
+    - help checking the withdrawal charges
+    - where can I check the cancellation fees?
+    - need assistance checking the early termination charge
+    - how to check the cancellation fees?
+    - show me the cancellation penalty
+    - need assistance checking the early termination charge
+    - I don't know what to do to check the cancellation fee
+    - is it possible to check the cancellation fee?
+    - could you show me the cancellation fee?
+    - I don't know how I can check the withdrawal penalties
+    - I cannot find the cancellation fee what can i do
+    - want help seeing the withdrawal fee
+    - how can I check the termniation fee?
+    - i do not know how to see the early termination penalties
+    - I need help to check the cancellation fee
+    - seeing early termination charge
+    - I can't find the cancellation fee
+    - want help seeing the cancellation penalty
+    - could you help me check the cancellation fees?
+    - i dont know how i can check the withdrawal penalties
+    - I need assistance to see the cancellation penalties
+    - is it possible to see the withdrawal penalty?
+    - I want help to check the cancellation fee
+    - show me the termination fees
+    - is it possible to check the cancellation fees?
+    - i have got to check the withdrawal fees can u help me
+    - can you help me to check the cancellation fee?
+    - I want assistance checking the cancellation fee
+    - help checking the withdrawal charges
+    - can you help me checking the cancellation fees?
+    - I need help to check the termination penalties
+    - I need help checking the cancellation charges
+    - where do I see the withdrawal charges?
+    - I have to check the cancellation fees
+    - i have got to see the cancellation charges
+    - I want to check the cancellation fees
+    - I don't know how to check the cancellation fees
+    - I don't know how I could check the cancellation fees
+    - can u help me see the early termination charges
+    - can u help me checking the termination penalties
+    - can you help me to see the early termination charge?
+    - i want assistance checking the withdrawal  fees
+    - what do I have to do to check the cancellation fees?
+    - i do not know how to see the early termination penalties
+    - I need help to check the cancellation fee
+    - I try to check the cancellation fee
+    - seeing early termination charge
+    - I cannot find the early termination penalties
+    - assistance checking the cancellation fee
+    - I need assistance to see the cancellation penalties
+    - I do not know how I can check the cancellation fees
+    - I try to see the early termination penalties
+    - I need assistance to check the cancellation fees
+    - see the termination penalties
+    - I am trying to check the cancellation fees
+    - I cannot find the early termination fees, can you help me?
+    - can you help me checking the termination penalties?
+
+
+    
+- intent: change_shipping_address
+  examples: |
+    - I need to update my shipping address
+    - Change the delivery address to my new location
+    - Can you help me change the shipping address?
+    - Modify shipping details to a different address
+    - I want to change the address for delivery
+    - Update the shipping address
+    - Change the delivery location
+    - How can I edit the shipping address?
+    - Adjust the shipping details
+    - Is it possible to change the address for delivery?
+    - Need to update my delivery address
+    - Can you assist me in changing the shipping address?
+    - Alter the delivery location
+    - I would like to update the shipping details
+    - Edit the shipping address
+    - Want to change where my order will be delivered
+    - Adjust the shipping address to a new one
+    - Change my delivery address
+    - I want to modify the address for shipping
+    - Is it possible to update the delivery location?
+    - Need to change where my order will be shipped
+    - Can you help me with changing the shipping details?
+    - Modify the delivery address
+    - I need to update where my order will be delivered
+    - Change where the order will be shipped
+    - Update the delivery location
+    - How do I change the shipping address?
+    - I want to change the delivery address
+    - Adjust the address for shipping
+    - Can I change my shipping address?
+    - Change the shipping destination
+    - Want to modify the delivery location
+    - Can you help me update the shipping address?
+    - I need to change the shipping address
+    - Edit where my order will be delivered
+    - Need to modify the shipping details
+    - I want to update my delivery address
+    - Change the address where the order will be delivered
+    - Adjust the shipping destination
+    - How can I change my delivery address?
+    - Modify the shipping location
+    - Is it possible to edit the delivery address?
+    - I want to change the shipping location
+    - Update where my order will be shipped
+    - Can you assist me with updating the delivery address?
+    - Change the delivery address for my order
+    - I need to edit the shipping details
+    - Want to change my delivery address
+    - Adjust the shipping address
+    - Can I update my shipping address?
+    - Change where the order will be delivered to
+    - Modify the shipping destination
+    - I would like to change my shipping address
+    - Need to adjust the delivery address
+    - Can you help me modify the shipping details?
+    - Edit the delivery location
+    - Update the shipping destination
+    - I want to update where my order will be delivered
+    - Change the location for shipping
+    - Adjust the delivery address
+    - How do I update my shipping address?
+    - I want to change where my order will be shipped
+    - Modify the shipping address to a different one
+    - Is it possible to change the shipping location?
+    - Need to change the delivery address
+    - Can you assist me in updating the shipping details?
+    - Change the address where my order will be delivered
+    - I need to change my delivery address
+    - Edit the shipping location
+    - Want to modify where my order will be delivered
+    - Adjust the shipping address to a new one
+    - Can you help me change the delivery location?
+    - I want to change the address for shipping
+    - Update my shipping address
+    - Change where the order will be shipped to
+    - Modify the delivery location
+    - Need to edit my delivery address
+    - Can you help me adjust the shipping details?
+    - Change the destination for shipping
+    - I need to update my delivery address
+    - Edit the address where my order will be delivered
+    - Want to change the shipping address
+    - Adjust where my order will be shipped
+    - Can you assist me with changing the delivery address?
+    - Change the location where the order will be delivered
+    - Modify the address for shipping
+    - I want to change the delivery location
+    - Update the address for shipping
+    - Need to modify where my order will be delivered
+    - Can you help me change my shipping address?
+    - Change the delivery details
+    - I need to change where my order will be shipped
+    - Edit the shipping details to a different address
+    - Want to update my shipping address
+    - Change the shipping address to a new one
+    - Adjust the shipping location
+    - Can you help me edit my delivery address?
+    - Modify where the order will be delivered
+    - I want to change the delivery address for my order
+    - Update the delivery address to my new location
+    - Need to change the address for shipping
+    - Can you help me update where my order will be shipped?
+    - Change the delivery address
+    - I need to modify my delivery address
+    - Edit the address for delivery
+    - Want to change the delivery details
+    - Adjust where the order will be delivered
+    - Can you assist me with updating the shipping address?
+    - Modify the address where the order will be shipped
+    - I want to update the delivery location
+    - Change where the order will be delivered
+    - Update the shipping location
+    - Need to change my shipping address
+    - Can you help me change the shipping destination?
+    - Change the address where my order will be shipped
+    - I need to edit my shipping address
+    - Edit the location for shipping
+    - Want to modify my shipping address
+    - Adjust the delivery location to a new one
+    - Can you help me change where my order will be delivered?
+    - Modify the delivery details
+    - I want to change the shipping details
+    - Update the location for shipping
+    - Change where my order will be delivered to
+    - Adjust the delivery address to a new one
+    - Can you assist me with changing my delivery address?
+    - Modify the shipping address for my order
+    - I need to change the location for delivery
+    - Edit where the order will be shipped
+    - Want to update the address for shipping
+    - Change the delivery location to a new one
+    - Adjust the shipping address for my order
+    - Can you help me change where the order will be shipped?
+    - Modify the delivery address to my new location
+    - I want to update the address where my order will be shipped
+    - Change the shipping details
+    - I need to change my shipping address to a different one
+    - Edit the delivery details to a different address
+    - Want to change the delivery address to my new location
+    - Can you assist me with updating my shipping address?
+    - Modify where my order will be shipped
+    - I want to change the shipping address for my order
+    - Update the address where the order will be delivered
+    - Change the delivery details to a new address
+    - Adjust the shipping address for delivery
+    - Can you help me change the address where my order will be delivered?
+    - Modify the shipping address to a new location
+    - I want to update the address for delivery
+    - Change where my order will be delivered
+    - Update the delivery address for my order
+    - Need to change my delivery address to a different one
+    - Can you assist me with updating the delivery location?
+    - Modify the address for delivery to my new location
+    - I want to change my shipping address for delivery
+    - Update the address where my order will be shipped
+    - Change the delivery address to my new location
+    - Adjust the shipping address for my order
+    - Can you help me change the delivery details?
+    - Modify where the order will be delivered to a new address
+    - I want to update the shipping address for delivery
+    - Change the delivery address for my order to a different one
+    - Update the shipping address for my order
+    - Need to change the shipping address for delivery to a new location
+    - Can you assist me with updating the address where my order will be delivered?
+    - Modify the delivery address for my order to a new location
+    - I want to change where my order will be shipped to a different address
+    - Update the delivery address for my order to a new location
+    - Change the address for delivery to my new location
+    - Adjust the delivery address for my order to a new location
+    - Can you help me change the shipping address for my order?
+    - Modify the shipping address for delivery to my new location
+    - I want to update the shipping address for my order to a different one
+    - Change the shipping address for my order to a new location
+    - Update the shipping address for my order to a new location
+    - Need to change the shipping address for my order to a different one
+    - Can you assist me with updating the shipping address for my order?
+    - Modify the shipping address for my order to a different one
+    - I want to change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Adjust the shipping address for my order to my new location
+    - Can you help me change the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Need to change the shipping address for my order to my new location
+    - Can you assist me with updating the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Adjust the shipping address for my order to my new location
+    - Can you help me change the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Need to change the shipping address for my order to my new location
+    - Can you assist me with updating the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Adjust the shipping address for my order to my new location
+    - Can you help me change the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Need to change the shipping address for my order to my new location
+    - Can you assist me with updating the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Adjust the shipping address for my order to my new location
+    - Can you help me change the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Need to change the shipping address for my order to my new location
+    - Can you assist me with updating the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Adjust the shipping address for my order to my new location
+    - Can you help me change the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Need to change the shipping address for my order to my new location
+    - Can you assist me with updating the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Adjust the shipping address for my order to my new location
+    - Can you help me change the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Need to change the shipping address for my order to my new location
+    - Can you assist me with updating the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Adjust the shipping address for my order to my new location
+    - Can you help me change the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Need to change the shipping address for my order to my new location
+    - Can you assist me with updating the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Adjust the shipping address for my order to my new location
+    - Can you help me change the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Need to change the shipping address for my order to my new location
+    - Can you assist me with updating the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Adjust the shipping address for my order to my new location
+    - Can you help me change the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Need to change the shipping address for my order to my new location
+    - Can you assist me with updating the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Adjust the shipping address for my order to my new location
+    - Can you help me change the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Need to change the shipping address for my order to my new location
+    - Can you assist me with updating the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Adjust the shipping address for my order to my new location
+    - Can you help me change the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Need to change the shipping address for my order to my new location
+    - Can you assist me with updating the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Adjust the shipping address for my order to my new location
+    - Can you help me change the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Need to change the shipping address for my order to my new location
+    - Can you assist me with updating the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Adjust the shipping address for my order to my new location
+    - Can you help me change the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Need to change the shipping address for my order to my new location
+    - Can you assist me with updating the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Adjust the shipping address for my order to my new location
+    - Can you help me change the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Need to change the shipping address for my order to my new location
+    - Can you assist me with updating the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Adjust the shipping address for my order to my new location
+    - Can you help me change the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Need to change the shipping address for my order to my new location
+    - Can you assist me with updating the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Adjust the shipping address for my order to my new location
+    - Can you help me change the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Need to change the shipping address for my order to my new location
+    - Can you assist me with updating the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Adjust the shipping address for my order to my new location
+    - Can you help me change the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Need to change the shipping address for my order to my new location
+    - Can you assist me with updating the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Adjust the shipping address for my order to my new location
+    - Can you help me change the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Need to change the shipping address for my order to my new location
+    - Can you assist me with updating the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Adjust the shipping address for my order to my new location
+    - Can you help me change the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Need to change the shipping address for my order to my new location
+    - Can you assist me with updating the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Adjust the shipping address for my order to my new location
+    - Can you help me change the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Need to change the shipping address for my order to my new location
+    - Can you assist me with updating the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Adjust the shipping address for my order to my new location
+    - Can you help me change the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Need to change the shipping address for my order to my new location
+    - Can you assist me with updating the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Adjust the shipping address for my order to my new location
+    - Can you help me change the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Need to change the shipping address for my order to my new location
+    - Can you assist me with updating the shipping address for my order to my new location?
+    - Modify the shipping address for my order to my new location
+    - I want to change the shipping address for my order to my new location
+    - Update the shipping address for my order to my new location
+    - Change the shipping address for my order to my new location
+
+
+
